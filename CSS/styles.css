@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+* {
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#navbar {
+	position: sticky;
+	top: 0;
+}
+
+#navbar ul {
+	display: grid;
+	list-style: none;
+	grid-template-columns: 1fr 1fr 1fr 2fr;
+	grid-template-rows: 1fr;
+	padding: 0.5rem;
+	font-size: 1rem;
+	background-color: #116181;	
+	justify-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#about {
+	grid-column: 1/2;
+	grid-row: 1;
+}
+
+#portfolio {
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+
+#cv {
+	grid-column: 3/4;
+	grid-row:1;
+}
+
+#contact {
+	grid-column: 4/5;
+	grid-row: 1;
