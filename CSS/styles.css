@@ -2,6 +2,7 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Titillium Web', sans-serif;
+  
 }
 
 #navbar {
@@ -40,16 +41,16 @@ a {
 	grid-column: 3/4;
 	grid-row:1;
 }
-
-#contact {
-	grid-column: 4/5;
-	grid-row: 1;
 */
-	
+#contact a{
+	color: #F28F38;
+}	
+
 #main_image {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto, 1fr;
+  margin:0;
 }
 
 #main_image img {
@@ -60,13 +61,50 @@ a {
 }
 
 #main_image_caption {
-  width:100%;
   grid-column: 1/5;
   grid-row: 2/3;
+  /*height: 25vh;*/
+  font-size: 2rem;
   text-align: center;
+  padding: 2rem 1rem 2rem 1rem;
+  margin: 0;
   background-color: #4E74BF; 
   color: #ffffff;
 }
-/*@media only screen and (max-width: 600px) {
-	
-}*/
+
+/*#main_image_caption a {
+  color: #F2B872;
+}  */
+
+#aboutme {
+  color: #ffffff;
+  background-color: #455073; /*#F2B872*/
+  padding: 2rem 1rem 2rem 1rem;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  
+#main_image img {
+  	width: 80vw;
+  	height: auto;
+   /* align:center;*/
+    grid-column:1/4;
+  }
+
+#main_image_caption {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    /*height: 25vh;*/
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: #4E74BF; 
+    color: #ffffff;
+  }
+
+#main_image_caption a {
+  color: #F2B872;
+}  
+  
+}
