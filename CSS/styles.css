@@ -5,6 +5,10 @@
   
 }
 
+h2 {
+  color:#F2BB77;
+}
+
 #navbar {
 	position: sticky;
 	top: 0;
@@ -15,7 +19,7 @@
 	list-style: none;
 	grid-template-columns: 1fr 1fr 1fr 2fr;
 	grid-template-rows: 1fr;
-	padding: 0.5rem;
+	padding: 1rem;
 	font-size: 1.5rem;
 	background-color: #455073;	
 	justify-items: center;
@@ -25,23 +29,8 @@ a {
 	text-decoration: none;
 	color: #ffffff;
 }
-/*
-#about {
-	grid-column: 1/2;
-	grid-row: 1;
-}
-
-#portfolio {
-	grid-column: 2/3;
-	grid-row: 1;
-}
 
 
-#cv {
-	grid-column: 3/4;
-	grid-row:1;
-}
-*/
 #contact a{
 	color: #F28F38;
 }	
@@ -54,16 +43,14 @@ a {
 }
 
 #main_image img {
-	width: 50vw;
+	width: 80vw;
 	height: auto;
- /* align:center;*/
-  grid-column:2/4;
+  grid-column:1/4;
 }
 
 #main_image_caption {
   grid-column: 1/5;
   grid-row: 2/3;
-  /*height: 25vh;*/
   font-size: 2rem;
   text-align: center;
   padding: 2rem 1rem 2rem 1rem;
@@ -72,39 +59,63 @@ a {
   color: #ffffff;
 }
 
-/*#main_image_caption a {
-  color: #F2B872;
-}  */
 
-#aboutme {
+.aboutme {
   color: #ffffff;
-  background-color: #455073; /*#F2B872*/
+  background-color: #455073;
   padding: 2rem 1rem 2rem 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  background-color: #4E74BF; 
+  color: #ffffff;
+  padding-top: 2rem;
   margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
+.projectcontainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:80vw;
+}
+
+.projectfigure img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 600px) {
   
 #main_image img {
-  	width: 80vw;
+  	width: 50vw;
   	height: auto;
    /* align:center;*/
-    grid-column:1/4;
+    grid-column:2/4;
   }
 
-#main_image_caption {
-    grid-column: 1/5;
-    grid-row: 2/3;
-    /*height: 25vh;*/
-    font-size: 2rem;
-    text-align: center;
-    padding: 2rem 1rem 2rem 1rem;
-    background-color: #4E74BF; 
-    color: #ffffff;
-  }
+.portfoliolist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-#main_image_caption a {
-  color: #F2B872;
-}  
+.projectcontainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:20vw;
+  padding: 2vw;
+}
+
+.projectgifure img {
   
+}
+
 }
