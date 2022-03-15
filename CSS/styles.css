@@ -5,13 +5,22 @@
   
 }
 
-h2 {
-  color:#F2BB77;
+ul {
+  margin:0;
+  padding: 0;
 }
 
+h2 {
+  color:#F2BB77;
+  font-size: 2.5rem;
+}
+
+
 #navbar {
+  z-index:1;
 	position: sticky;
 	top: 0;
+  border-bottom: solid 2px #4E74BF;
 }
 
 #navbar ul {
@@ -30,6 +39,10 @@ a {
 	color: #ffffff;
 }
 
+li:hover {
+  transform: scale(1.1);
+  /*color:black;*/
+}
 
 #contact a{
 	color: #F28F38;
@@ -107,6 +120,39 @@ a {
   height: auto;
 }
 
+figcaption {
+  font-size: 1.5rem;
+}
+
+.project_links {
+  width:100%;
+}
+
+.project_links ul{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  /*flex-wrap: wrap;*/
+  /*justify-content: space-between;*/
+  gap: 0.5rem;
+  color:#F2BB77;
+  list-style: none;
+}
+
+.github_link {
+  grid-column:1;
+}
+.site_link {
+  grid-column:2;
+}
+
+.project_links a:hover {
+  transform: scale(1.05);
+  background-color: #4E74BF;
+  padding: 0.25rem;
+  /*border: 2px solid #A0B3D9;*/
+  border-radius: 0.25rem;
+}
+
 @media only screen and (min-width: 600px) {
   
   #main_image img {
@@ -128,6 +174,10 @@ a {
     align-items: center;
     width:30vw;
     padding: 2vw;
+  }
+  
+  .about_me p, .portfolio_heading p {
+    font-size: 1.5rem;
   }
 }
 
