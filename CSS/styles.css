@@ -43,7 +43,7 @@ li:hover {
   transform: scale(1.1);
 }
 
-#contact a {
+#contact_nav a {
   color: #f28f38;
 }	
 
@@ -73,7 +73,7 @@ li:hover {
 }
 
 
-.about_me {
+#about_me {
   color: #ffffff;
   background-color: #455073;
   padding: 2rem 1rem 2rem 1rem;
@@ -81,7 +81,7 @@ li:hover {
   text-align: center;
 }
 
-.portfolio_heading {
+#portfolio_heading {
   color: #ffffff;
   background-color: #4e74bf;
   padding: 2rem 1rem 2rem 1rem;
@@ -114,7 +114,7 @@ li:hover {
 }
 
 .project_container:hover {
-  background-color: #455073; /*#F2BB77*/
+  background-color: #455073; 
   transform: scale(1.1);
   border-radius: 0.5rem;
 }
@@ -142,14 +142,14 @@ figcaption {
   width:100%;
 }
 
-.project_links ul{
+.project_links ul {
   display: grid;
   grid-template-columns: 1.5fr 2fr 0.25fr;
   gap: 0.5rem;
   list-style: none;
 }
 
-.project_links i{
+.project_links i {
   color: #f28f38;
   font-size: 1.5rem;
 }
@@ -171,16 +171,16 @@ figcaption {
   border-radius: 0.25rem;
 }
 
-.contact {
+#contact {
   background-color: #455073;
   padding: 2rem;
 }
 
-.contact h2 {
+#contact h2 {
   padding-top:0;
 }
 
-.contact ul {
+#contact ul {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -213,8 +213,6 @@ figcaption {
     font-size: 1.5rem;
   }
 }
-
-
 
 @media only screen and (max-width: 800px) {
   .project_container {
