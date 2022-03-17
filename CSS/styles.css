@@ -47,26 +47,29 @@ li:hover {
   color: #f28f38;
 }	
 
+#main_image figure {
+  margin: 2rem 0 0 0;
+}
+
 #main_image {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  margin:0;
+  text-align: center;
+  position: sticky;
+  top: 6rem;
+  z-index:-1;
 }
 
 #main_image img {
   width: 80vw;
   height: auto;
-  grid-column:1/4;
+  margin: 2rem;
+  
 }
 
 #main_image_caption {
-  grid-column: 1/5;
-  grid-row: 2/3;
   font-size: 2rem;
   text-align: center;
   text-decoration: none;
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem 0rem 2rem 0rem;
   margin: 0;
   background-color: #4e74bf; 
   color: #ffffff;
@@ -190,10 +193,9 @@ figcaption {
 
 @media only screen and (min-width: 800px) {
   
-  #main_image img {
+  #main_image figure img {
     width: 50vw;
     height: auto;
-    grid-column:2/4;
   }
 
   .portfolio_list {
