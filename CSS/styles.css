@@ -44,6 +44,7 @@ li:hover {
 
 #contact_nav a {
   color: #f28f38;
+  grid-column: 4 / 5;
 }	
 
 #main_image figure {
@@ -126,7 +127,7 @@ li:hover {
 
 .project_figure img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3/2;
   border-radius: 1rem;
   max-width: 400px;
   border: 0.15rem solid #ffffff;
