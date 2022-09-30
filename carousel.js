@@ -1,5 +1,6 @@
 import Glide from "@glidejs/glide";
 
+
 const glide = new Glide('.glide',{
     type: 'carousel',
     animationDuration: 1000,
