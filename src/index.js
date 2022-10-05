@@ -1,5 +1,4 @@
-import Glide from "@glidejs/glide";
-
+// import glide from "./@glidejs/glide";
 
 const glide = new Glide('.glide',{
     type: 'carousel',

@@ -6,11 +6,6 @@
     margin: 0;
 }
 
-/*ul {*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
-
 h2 {
     color: #f28f38;
     font-size: 2.5rem;
@@ -209,6 +204,40 @@ figcaption {
     color: #ffffff;
 }
 
+.glide__arrow {
+    position: absolute;
+    font-size: 4rem;
+    top: 35%;
+    z-index: 2;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    transform: none;
+  }
+  
+  .glide__arrow:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+  .glide__arrow--left {
+    left: 3rem
+  }
+  
+  .glide__arrow--right {
+    right: 3rem
+  }
+  
+  .glide__arrow--disabled {
+    opacity: .33
+  }
+  
+  .glide__arrow:hover {
+    transform: scale(1.05);    
+  }
+
 
 @media only screen and (min-width: 900px) {
 
@@ -235,10 +264,3 @@ figcaption {
     }
 }
 
-
-
-/* @media only screen and (max-width: 800px) {
-    .project_container {
-        grid-column: 2;
-    }
-} */
