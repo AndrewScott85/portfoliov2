@@ -1,6 +1,3 @@
-# portfolio
-Phone
-https://wireframe.cc/PGwBNl
+# portfolio v2
 
-Computer
-https://wireframe.cc/oqaj7e
+A work-in-progress to update my portfolio. 
